@@ -12,7 +12,6 @@ function send_message(wl, ann, sheetId, accessToken) {
       pushbullet(wl[curr].symbol+" "+ann[curr].category, ann[curr].notice+" "+ann[curr].pdf, accessToken)
       prev.push([wl[curr].symbol, curr, ann[curr].timestamp])
     } else {
-      Logger.log("FALSE")
       prev.push([wl[curr].symbol ,curr, wl[curr].last_update])
     }
     return prev
