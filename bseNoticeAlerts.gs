@@ -1,7 +1,7 @@
 function alertBot(){
   const store = {
     "sheetId" : "", // Enter your watchlist spreadhseet id between the ""
-    "accessToken" : "" // Enter your Pushbullet access token Between the ""
+    "accessToken" : "" // Enter your Pushbullet access token between the ""
   }
   send_message(watchlist(store.sheetId), announcements(), store.sheetId, store.accessToken)
 }
