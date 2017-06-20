@@ -10,6 +10,6 @@ Use this as a Google Script to setup BSE announcement alerts for your stock watc
 
 3. Create a Pushbullet account. Install the app on your phone. Go to the pushbullet website, head to "My Account" and then create an access token. Note this token.
 
-4. Create a new script file in your Google Drive. Clear any existing code. Copy and paste the contents of bseNoticeAlerts.gs in it. Enter your spreadsheet ID and access token in the `store` object in the `alertBot` function.
+4. Create a new script file in your Google Drive (see [tutorial](https://developers.google.com/apps-script/guides/standalone#creating_a_standalone_script) on creating standalone scripts). Clear any existing code. Copy and paste the contents of bseNoticeAlerts.gs in it. Enter your spreadsheet ID and access token in the `store` object in the `alertBot` function.
 
 5. Finally, setup triggers for the `alertBot` function by going to "Edit" > "Current project's triggers" to have Google run the function automatically at regular intervals (preferably every minute).
