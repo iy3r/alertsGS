@@ -4,6 +4,7 @@ function alertBot(){
     "accessToken" : "", // Enter your Pushbullet access token Between the ""
     "limit" : -20 // % Drawdown from latest 52w high
   }
+  const dt = new Date()
   if (dt.getDay()===6 || dt.getDay()===0) return
   else if (dt.getHours()>=9 && dt.getMinutes()>=30 && dt.getHours()<=15 && dt.getMinutes()<=30) {
     send_message(watchlist(store.sheetId), last52wHigh(), store.limit, store.accessToken, store.sheetId)
